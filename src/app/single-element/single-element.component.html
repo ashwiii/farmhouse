@@ -1,0 +1,76 @@
+<!-- <section class="py-5"> -->
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0"
+                    src="{{productdata.images}}" alt="..." />
+            </div>
+            <!-- <div class="col-md-6"> -->
+                <div class="row col-md-6 container">
+                    <div class="col">
+                        <label class="text-upper" style="color: gray;">check in</label>
+                        <input type="date" class="form-control form_datetime hasDatepicker" placeholder="" id="checkin"
+                            name="checkin">
+                        <input type="hidden" name="hide_checkin" id="hide_checkin" value="2022-11-14">
+                    </div>
+                    <div class="col">
+                        <label class="text-upper" style="color: gray;">check out</label>
+                        <input type="date" class="form-control form_datetime hasDatepicker" placeholder="" id="checkout"
+                            name="checkout">
+                        <input type="hidden" name="hide_checkout" id="hide_checkout" value="2022-11-15">
+                    </div>
+                    <div class="pt-4">
+                        <p style="color: gray;">NO OF GUESTS</p>
+                    </div>
+                    <div>
+                        <input class="form-control" type="number" placeholder="No of guests">
+                    </div>
+                    <div class="pt-4">
+                        <p style="color: gray;">* Max accomodation for 6 guests</p>
+
+                    </div>
+                    <div class="pt-4">
+                        <h5 style="color: gray;">PACKAGES</h5>
+
+                    </div>
+                    
+                        <div class="dropdown " style="border: solid gray;">
+                            <a class="btn btn-white dropdown-toggle form-control" style="color: gray;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Family Package
+                            </a>
+                          
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                          <div class="pt-4">
+                            <h5 style="color: gray;">ACTIVITIES</h5>
+    
+                        </div>
+                        <div class="dropdown " style="border: solid gray;">
+                            <a class="btn btn-white dropdown-toggle form-control" style="color: gray;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              CHOOSE
+                            </a>
+                          
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                          <div class="amnt pt-5 text-success">
+                              <h1>{{productdata.price}}</h1>
+                              <p style="color: gray;">(inclusive of all taxes)</p>
+                          </div>
+                          <div>
+                            <button type="submit" (click)="booknow()" class="w-100 bg-success" style="border: none; color: white;" >book now</button>
+                        </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    <!-- </div> -->
+<!-- </section> -->
+<!-- Related items section-->

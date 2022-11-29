@@ -1,0 +1,16 @@
+.s2{
+    text-align: center;
+}
+.hjk{
+    width: 100%;
+    height: 100%;
+}
+.ss{
+    padding-left: 10px;
+    border: none;
+    height: 250px;
+}
+.hjk:hover{
+    opacity: 0.6;
+    
+}

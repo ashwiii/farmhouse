@@ -1,0 +1,342 @@
+
+ <!-- <h1 style="color: black;">welcome{{email}}</h1>
+<div><h3>system date and time {{sDetails | date:'short'}}</h3></div>  -->
+<!-- <button class="btn btn-danger ms-5" id="c1" (click)="logout()">logout</button> -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+            <img src="https://i.postimg.cc/FR8SQJNB/farmhouse.jpg" style="height: 400px;" class="d-block w-100"
+                alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>welcome to Farmhouse</h1>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+            <img src="https://i.postimg.cc/FR8SQJNB/farmhouse.jpg" style="height: 400px;" class="d-block w-100"
+                alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>welcome to Farmhouse</h1>
+                <p>Some representative placeholder content for the second slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+            <img src="https://i.postimg.cc/FR8SQJNB/farmhouse.jpg" style="height: 400px;" class="d-block w-100"
+                alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>welcome to Farmhouse</h1>
+                <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<br>
+
+<!-- search farmhouse -->
+<div class="searchForm">
+    <div class="container">
+        <form class="form-inline search-farmhouse form-row bg-success " role="form" id="search_form"
+            action="farmhouse.php">
+            <div class="col-sm col-6">
+                <div class="form-group">
+                    <div class="form-icon"> <i class="fa fa-map-marker"></i></div>
+                    <label class="white">Search Farmhouse</label>
+                    <div class="me-2">
+                        <input type="text" class="form-control pac-target-input " placeholder="Location" id="pac-input"
+                            name="pac-input" autocomplete="off">
+                    </div>
+
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+            <div class="col-sm col-6 me-2">
+                <div class="form-group">
+                    <div class="form-icon"><i class="fa fa-calendar"></i></div>
+                    <label class="white">From</label>
+                    <input type="date" placeholder="dd-mm-" id="from_date" name="from_date"
+                        class="form-control form_datetime hasDatepicker">
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+            <div class="col-sm col-6 me-2">
+                <div class="form-group">
+                    <div class="form-icon"><i class="fa fa-calendar"></i></div>
+                    <label class="white">To</label>
+                    <input type="date" id="end_date" name="end_date" class="form-control form_datetime hasDatepicker">
+                    <span class="focus-border"></span>
+                </div>
+            </div>
+            <div class="col-sm col-6 me-2">
+                <div class="form-group">
+                    <div class="form-icon"><i class="fa fa-user"></i></div>
+                    <label class="white">Guest</label>
+                    <input type="number" id="adult" name="guestnumber" class="form-control " placeholder="No of guests"
+                        min="1">
+
+                    <span class="focus-border">
+                        <!-- <p id="guest_num" style="color:#fff;"></p> -->
+                    </span>
+
+                </div>
+            </div>
+            <div class="col-sm col-6 ">
+                <div class="form-group ">
+                    <!-- <input type="button" class="btn btn-green text-upper white mt-3" id="search_btn" value="search">  -->
+                    <button class="btnh" style="border-radius: 10px;" type="submit">search</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- welcome -->
+
+</div><br>
+<div class="d-flex">
+    <div class="container" style="text-align: center;">
+        <h2 class="text-success">
+            welcome to our website!
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi earum a ex officiis esse nemo eveniet quis
+            totam, officia harum, perspiciatis aut nisi placeat sunt ipsa blanditiis odio unde rerum. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Similique culpa ratione illo voluptates facere illum laborum expedita
+            laboriosam est! Iure obcaecati deleniti nostrum voluptatum, eius assumenda. Velit eos vel tempora!</p>
+        <button type="submit" (click)="readmore()" class="readmore">readmore</button>
+    </div>
+
+    <!-- deals -->
+</div><br><br>
+<hr>
+<hr><br>
+<div class="d-flex">
+    <div class="container text-success" style="text-align: center;">
+        <h2 class="text1"> Deals for you</h2>
+    </div>
+</div><br><br>
+
+<!-- cards -->
+
+<div  class="container-fluid">
+
+    <div  class="row">
+
+        <div *ngFor="let product of products" class="col-lg-3 col-md-6  col-sm-12   text-dark border border-white " style="background-color:  #fefefc;"
+            id="hoverset"> <a href="singleview/ {{product.id}}" >
+
+
+                <img  class="img-fluid img-thumbnail img1" src="{{product.images}}" alt="">
+
+                <p class="text-center text-success"><b>{{product.name}}</b></p>
+                <p style="color: grey;">{{product.address}}</p>
+
+            </a>
+
+        </div>
+    </div>
+</div>
+
+<!-- <div class="col-lg-3 col-md-6  col-sm-12   text-dark border border-white " style="background-color:  #fefefc;"
+            id="hoverset"><a (click)="view()">
+
+                <img src="https://i.postimg.cc/nrL1BmDm/image.png" class="img-fluid img-thumbnail img1" alt="">
+
+                <p class="text-center text-success"><b>Greenland farmhouse resort</b></p>
+                <p style="color: grey;">Thazhupu Cherthala, Alleppey, Kerala 688540</p>
+            </a>
+
+        </div>
+        <div class="col-lg-3 col-md-6  col-sm-12   text-dark border border-white " style="background-color:  #fefefc;"
+            id="hoverset"><a (click)="view()">
+                <img src="https://i.postimg.cc/FHG3gzhg/image.png" class="img-fluid img-thumbnail img1" alt="">
+                <p class="text-center text-success"><b>Greenland farmhouse resort</b></p>
+                <p style="color: grey;">Tea County Road, Ikka Nagar, Munnar, Kerala 685612</p>
+            </a>
+
+
+        </div>
+        <div class="col-lg-3 col-md-6  col-sm-12   text-dark border border-white " style="background-color:  #fefefc;"
+            id="hoverset"><a (click)="view()">
+                <img src="https://i.postimg.cc/W34nJyC8/image.png" class="img-fluid img-thumbnail img1" alt="">
+                <p class="text-center text-success"><b>Greenland farmhouse resort</b></p>
+                <p style="color: grey;">Tea County Road, Ikka Nagar, Munnar, Kerala 685612</p>
+            </a>
+        </div>
+
+
+
+
+
+        <div class="col-lg-3 col-md-6  col-sm-12   text-dark border border-white " style="background-color:  #fefefc;"
+            id="hoverset"><a (click)="view()">
+                <img src="https://i.postimg.cc/W34nJyC8/image.png" class="img-fluid img-thumbnail img1" alt="">
+                <p class="text-center text-success"><b>Greenland farmhouse resort</b></p>
+                <p style="color: grey;">Tea County Road, Ikka Nagar, Munnar, Kerala 685612</p>
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-6  col-sm-12   text-dark border border-white " style="background-color:  #fefefc;"
+            id="hoverset"><a (click)="view()">
+                <img src="https://i.postimg.cc/FHG3gzhg/image.png" class="img-fluid img-thumbnail img1" alt="">
+                <p class="text-center text-success"><b>Greenland farmhouse resort</b></p>
+                <p style="color: grey;">Tea County Road, Ikka Nagar, Munnar, Kerala 685612</p>
+            </a>
+
+
+        </div>
+        <div class="col-lg-3 col-md-6  col-sm-12   text-dark border border-white " style="background-color:  #fefefc;"
+            id="hoverset"><a (click)="view()">
+                <img src="https://i.postimg.cc/nrL1BmDm/image.png" class="img-fluid img-thumbnail img1" alt="">
+
+                <p class="text-center text-success"><b>Greenland farmhouse resort</b></p>
+                <p style="color: grey;">Thazhupu Cherthala, Alleppey, Kerala 688540</p>
+            </a>
+
+        </div>
+        <div class="col-lg-3 col-md-6  col-sm-12   text-dark border border-white " style="background-color:  #fefefc;"
+            id="hoverset"><a (click)="view()">
+                <img src="https://i.postimg.cc/3wCWhbc8/image.png " class="img-fluid img-thumbnail img1" alt="">
+
+                <p class="text-center text-success"><b>Greenland farmhouse resort</b></p>
+                <p style="color: grey;">Nelliyampathy - Seetharkundu Road, Sitargundu Estate, Nelliyampathy,
+                    Kerala 678511</p>
+            </a>
+        </div> -->
+
+
+
+
+
+<br><br>
+
+<!-- another section -->
+<div class="container" style="background-color: lightgray;">
+    <div class="row">
+        <div class="col-12 mt-5">
+            <h3 class="bold gray pb-3 text-center text-success">Search from a wide range of farmhouse</h3>
+        </div>
+        <div class="col-12 search-block">
+            <form class="form-inline mb-4">
+                <div class="dropdown p-3">
+                    <button class="btn btn-white d1 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Guest Rating
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-white d1 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Price
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <div class="form-group mb-2">
+                    <button type="button" class="btn btn-green btn-radius white text-upper" id="filter">search</button>
+                    -->
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row p-4 " id="filter_farm">
+        <div class="card col-lg-4 col-md-6  col-sm-12 p-4">
+
+            <img src="https://i.postimg.cc/rmSmkwTN/image.png" class="card-img-top im1" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-success">sea lagoon health resort</h5>
+                <p class="card-text" style="color: rgb(114, 112, 112);">Cradled between the turbulent waves of the
+                    Arabian Sea on one side and the serene backwaters on the ...</p>
+                <a href="" routerLink="single-view" class="btn btn-success">Readmore</a>
+            </div>
+        </div>
+
+        <div class=" card col-lg-4 col-md-6  col-sm-12 p-4">
+
+            <img src="https://i.postimg.cc/Y0dtr4sY/image.png" class="card-img-top im1" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-success">LES 3 Elephants</h5>
+                <p class="card-text" style="color: rgb(114, 112, 112);">French owned, designed and managed
+                    Backwaters Boutique Eco Resort, 200 meters from the Arabian Sea. ...</p>
+                <a href="#" routerLink="single-view" class="btn btn-success">readmore </a>
+            </div>
+        </div>
+
+        <div class="card col-lg-4 col-md-6  col-sm-12 p-4">
+
+            <img src="https://i.postimg.cc/rmSmkwTN/image.png" class="card-img-top im1" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-success">Evergreen Farmhouse</h5>
+                <p class="card-text" style="color: rgb(114, 112, 112);">Our Homestay is a good Homestay we have many
+                    features one of ours room is AC bedroom & another one i...</p>
+                <a href="#" routerLink="single-view" class="btn btn-success">Readmore</a>
+            </div>
+
+        </div>
+
+
+        <div class="mt-3 card col-lg-4 col-md-6  col-sm-12 p-4">
+
+            <img src="https://i.postimg.cc/0NyFvWqW/image.png" class="card-img-top im1" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-success">Aranya homestay wayanad</h5>
+                <p class="card-text" style="color: rgb(114, 112, 112);">Aranya Homestay is a Traditional Kerala
+                    Style Home within the Aranya Farms right in the lap of the B...</p>
+                <a href="#" routerLink="single-view" class="btn btn-success">Readmore</a>
+            </div>
+        </div>
+
+
+
+        <div class="mt-3 card col-lg-4 col-md-6  col-sm-12 p-4">
+
+            <img src="https://i.postimg.cc/rmSmkwTN/image.png" class="card-img-top im1" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-success">Kalathil lake resort</h5>
+                <p class="card-text" style="color: rgb(114, 112, 112);">Kalathil Lake Resort is all set to render
+                    hospitality service with added flavors to the distinguishe...</p>
+                <a href="#" routerLink="single-view" class="btn btn-success">Readmore</a>
+            </div>
+        </div>
+
+        <div class="mt-3 card col-lg-4 col-md-6  col-sm-12 p-4">
+
+
+            <img src="https://i.postimg.cc/mrWWGNgK/image.png" class="card-img-top im1" alt="...">
+            <div class="card-body">
+                <h5 class="card-title text-success">Kumarakom Guest House</h5>
+                <p class="card-text" style="color: rgb(114, 112, 112);">It is a three bedroom lakeview villa. It is
+                    set up with all necessery amenities like washing machine...</p>
+                <a href="#" routerLink="single-view" class="btn btn-success">Readmore</a>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <button (click)="viewmore()"  class="view-more ">view more</button>
+    </div><br>
+</div>
+
+<!-- <p>{{getJsonvalue | json}}</p> -->
+

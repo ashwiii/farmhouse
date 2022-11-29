@@ -1,0 +1,81 @@
+.searchform{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right:0;
+    background: rgba(252, 250, 250, 0.55);;
+}
+.form-inline{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+.form-row{
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.search-farmhouse{
+    padding: 15px;
+}
+.btnh:hover{
+    background-color: green;
+    color: white;
+}
+.btnh{
+    border: none; color:green ; margin-top: 45px; width: 50%;
+}
+.readmore:hover{
+    color: white;
+    background-color: green;
+}
+.readmore{
+    background-color: white;
+    color: green;
+    border: solid green;
+}
+.img1{
+    height: 200px;
+    width: 100%;
+}
+#hoverset:hover{
+    animation: 3s ease-in-out 1s infinite;
+   transform: rotate(0deg) scale(.8); 
+   box-shadow: rgb(211, 202, 202) 0px 0px 10px 15px;
+   /* height: 500px;  */
+   /* width: 500px; */
+   transition: .3s ease-in;
+}
+.d1{
+    border-bottom: 3px black;
+    border: none;
+    text-decoration: underline;
+    color:black
+}
+.im1{
+    height: 200px;
+    width: 100%;
+}
+.im1:hover{
+    animation: 3s ease-in-out 1s infinite;
+    transform: rotate(0deg) scale(.8); 
+    box-shadow: rgb(211, 202, 202) 0px 0px 10px 15px;
+    /* height: 500px;  */
+    /* width: 500px; */
+    transition: .3s ease-in;
+
+}
+.view-more{
+    color: green;
+    background-color: white;
+    border: green;
+    text-align: center;
+    align-items: center;
+    border: solid green;
+}
+.view-more:hover{
+    background-color: green;
+    color: white;
+}
+a{
+    text-decoration: none;
+}

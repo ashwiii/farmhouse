@@ -1,0 +1,94 @@
+<div class="container">
+    <div class="row pt-5">
+        <div class="p-4 col-lg-6 " style="border:solid gray  ; ">
+            <div style="text-align: center;">
+                <h2 style="color: gray;">LOGIN</h2>
+            </div>
+
+            <div class="login-type text-center">
+                <button type="button" style=" margin-right: 4px;" class="btn btn-primary ">Facebook</button>
+                <button type="button" style="margin-left: 4px;" class="btn btn-danger ">Google</button>
+            </div>
+            <div class="text-center p-5">
+                <h4 style="color: gray;">Or Email</h4>
+            </div>
+            <div class="wrapper fadeInDown">
+                <div id="formContent">
+                    <form action="#" class="login-form" [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+                        <!-- Tabs Titles -->
+                        <!-- <h2 class="active">Sign In</h2> -->
+                        <!-- <h2 class="inactive underlineHover">Sign Up</h2> -->
+
+                        <!-- Icon -->
+                        <!-- <div class="fadeIn first">
+                            <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+                        </div> -->
+
+                        <!-- Login Form -->
+                        <!-- <input type="text" id="login" class="fadeIn second" name="login" formControlName="email"
+                            placeholder="login" />
+                        <input type="text" id="password" class="fadeIn third" name="login" formControlName="password"
+                            placeholder="password" />
+                        <input type="submit" class="fadeIn fourth" value="Log In" /> -->
+
+                        <!-- <div class="text-center p-5">
+                            <h4 style="color: gray;">Or Email</h4>
+                        </div> -->
+                        <div class="p-2">
+                            <input formControlName="email" class="form-control" type="email" placeholder="email">
+                        </div>
+                        <div class="p-2">
+                            <input formControlName="password" class="form-control " type="password" placeholder="password">
+                        </div>
+                        <div class="text-center p-2">
+                            <button type="submit" class="btn btn-success w-50">login</button>
+                        </div>
+                        <div class="p-4 text-center">
+                            <a href="">forgot password?</a>
+                        </div>
+                    </form>
+
+                    <!-- Remind Passowrd -->
+                    <!-- <div id="formFooter">
+                        <a class="underlineHover" href="#">Forgot Password?</a>
+                    </div> -->
+                      
+                </div>
+            </div>
+
+
+        </div>
+        
+            <div class="col-lg-6  " style="border: solid gray;">
+                <form [formGroup]="signupForm" action="" (ngSubmit)="signup()">
+                <div style="text-align: center; ">
+                    <h2 class="p-2" style="color: gray;">REGISTER</h2>
+                </div>
+                <div class="p-3">
+                    <input formControlName="name" class="form-control" type="text" placeholder="username">
+                </div>
+                <div class="p-3">
+                    <input formControlName="email" class="form-control" type="email" placeholder="email">
+                </div>
+                <div class="p-3">
+                    <input formControlName="place" class="form-control" type="text" placeholder="place">
+                </div>
+                <div class="p-3">
+                    <input formControlName="password" class="form-control" type="password" placeholder="password">
+                </div>
+                <div class="p-3">
+                    <input formControlName="passwordConfirm" class="form-control" type="password" placeholder="conform password">
+                </div>
+                <div class="p-3">
+                    <input formControlName="mobile" class="form-control" type="number" placeholder="phone">
+                </div>
+                <div class="text-center p-2">
+                    <button type="submit" class="btn btn-success w-50">signup</button>
+                </div>
+            </form>
+            </div>
+      
+
+
+    </div>
+</div>

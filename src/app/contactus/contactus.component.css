@@ -1,0 +1,21 @@
+.a2{
+    text-decoration: none;
+    color: gray;
+}
+.a2:hover{
+    color: green;
+}
+.sd{
+    color: gray;
+}
+.hh{
+    text-align:center;
+    color: rgb(245, 250, 245);
+    border: none;
+    width: 30%;
+    background-color: green;
+}
+.hh:hover{
+    background-color: white;
+    color: green;
+}
