@@ -44,6 +44,9 @@ export class ProductService {
         this.router.navigateByUrl('');
       }});
   }
+  loggedin(){
+    return!!localStorage.getItem('token')
+  }
 }
 
 // https://fakestoreapi.com/products

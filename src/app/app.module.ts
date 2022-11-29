@@ -13,6 +13,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { LoginComponent } from './login/login.component';
 import { SingleElementComponent } from './single-element/single-element.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FilterPipe } from './shared/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactusComponent,
     LoginComponent,
     SingleElementComponent,
+    FilterPipe,
     
     
   ],
