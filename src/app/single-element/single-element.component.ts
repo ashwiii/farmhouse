@@ -16,7 +16,7 @@ export class SingleElementComponent implements OnInit {
   booknow(){
     if(!localStorage.getItem('token')){
       alert('please login first')
-      this.router.navigateByUrl('')
+      this.router.navigateByUrl('login')
     }
     else{
       alert('booking confirmed')
