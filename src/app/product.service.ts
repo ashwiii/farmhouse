@@ -1,13 +1,15 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
+
+  public search = new BehaviorSubject<string>("");
 
   constructor(private httpClient: HttpClient,private router:Router) { }
 
@@ -35,7 +37,7 @@ export class ProductService {
         console.log(res);
         console.log(`-------------`);
         localStorage.setItem('token', res.token);
-        if (!res) {
+        if (!res.token) {
           // console.log(res);
           alert(`check  email and password`);
         }
@@ -44,7 +46,7 @@ export class ProductService {
         this.router.navigateByUrl('');
       }});
   }
-  loggedin(){
+  loggedin(){  
     return!!localStorage.getItem('token')
   }
 }

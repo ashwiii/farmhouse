@@ -59,7 +59,7 @@
                     <div class="form-icon"> <i class="fa fa-map-marker"></i></div>
                     <label class="white">Search Farmhouse</label>
                     <div class="me-2">
-                        <input type="text" class="form-control pac-target-input " placeholder="Location" id="pac-input"
+                        <input type="text" class="form-control pac-target-input "[(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Location" id="pac-input"
                             name="pac-input" autocomplete="off">
                     </div>
 
@@ -137,7 +137,7 @@
 
     <div  class="row">
 
-        <div *ngFor="let product of products " class="col-lg-3 col-md-6  col-sm-12   text-dark border border-white " style="background-color:  #fefefc;"
+        <div *ngFor="let product of products | filter:searchKey:'title' " class="col-lg-3 col-md-6  col-sm-12   text-dark border border-white " style="background-color:  #fefefc;"
             id="hoverset"> <a href="singleview/ {{product.id}}" >
 
 
@@ -340,3 +340,27 @@
 
 <!-- <p>{{getJsonvalue | json}}</p> -->
 
+
+
+
+
+
+<!-- <div *ngIf="login()" class="col-lg-12">
+    <ul class="tabs-container">
+      <li  (click)="onTabClick('Personal Details')" [class.active]="activeTab == 'Personal Details'"
+        class="tab-link">Personal Details</li>
+      <li (click)="onTabClick('Account Details')" [class.active]="activeTab == 'Account Details'"
+        class="tab-link">Account Details</li>
+      <li (click)="onTabClick('Other Details')" [class.active]="activeTab == 'Other Details'"
+        class="tab-link">Other Details</li>
+    </ul>
+    <div *ngIf="activeTab == 'Personal Details'" class="w-100">
+      Personal Details
+    </div>
+    <div *ngIf="activeTab == 'Account Details'" class="w-100">
+      Account Details
+    </div>
+    <div *ngIf="activeTab == 'Other Details'" class="w-100">
+      Other Details
+    </div>
+  </div> -->
