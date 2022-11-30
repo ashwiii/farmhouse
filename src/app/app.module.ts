@@ -14,6 +14,8 @@ import { LoginComponent } from './login/login.component';
 import { SingleElementComponent } from './single-element/single-element.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './shared/filter.pipe';
+import { MatExpansionModule } from '@angular/material/expansion';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { FilterPipe } from './shared/filter.pipe';
     SitelayoutModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

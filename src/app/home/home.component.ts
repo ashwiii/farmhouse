@@ -2,12 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../product.service';
 
+
 @Component({
-  selector: 'app-home',
+  selector: 'app-home' ,
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  
+
+  
+
   email = ''
   sDetails: any
 
@@ -15,7 +20,7 @@ export class HomeComponent implements OnInit {
   searchKey: string = "";
   public searchTerm: string = "";
 
-  constructor(private router: Router, private Productservice: ProductService) {
+  constructor(private router: Router, private Productservice: ProductService,) {
     if (localStorage.getItem('user')) {
       this.email = (localStorage.getItem('user') || '')
     }

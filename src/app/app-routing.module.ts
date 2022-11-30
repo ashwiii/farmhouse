@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'activities',component:ActivitiesComponent},
   {path:'contactus',component:ContactusComponent},
   {path:'login',component:LoginComponent},
-  {path:'singleview/:id',component:SingleElementComponent},
+  {path:'singleview/:name',component:SingleElementComponent},
 
 
 

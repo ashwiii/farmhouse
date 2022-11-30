@@ -11,6 +11,7 @@ export class SingleElementComponent implements OnInit {
 
   productid:any
   productdata:any
+  
 
   constructor(private activatedroute:ActivatedRoute,private productservice:ProductService,private router:Router) { }
   booknow(){
@@ -26,14 +27,30 @@ export class SingleElementComponent implements OnInit {
   ngOnInit(): void {
     this.activatedroute.params.subscribe((data:any)=>{
       console.log(data);
-      this.productid=data['id']
+      this.productid=data['name']
       
     })
     this.productservice.viewproduct(this.productid).subscribe((item:any)=>{
-      // console.log(`hey${item.images}`);
+      console.log(`hey${item.images}`);
       
     this.productdata=item
     })
+
+    // this.activatedroute.params.subscribe(params => this.getPetByid(params('id')))
+
+    
+
+
+
+
   }
+  
+  // pet:Pet | undefined;
+
+
+  // getPetByid(id:number){
+    // this.productservice.viewproduct(id).subscribe((data:Pet)=>this.pet=data);
+
+  // }
 
 }

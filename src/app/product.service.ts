@@ -18,7 +18,7 @@ export class ProductService {
     return this.httpClient.get(baseurl);
   }
   viewproduct(productid: any) {
-    const baseurl = 'https://farm-house-reubro-h1ua.onrender.com/api/v1/users/tours/' + productid
+    const baseurl = 'https://farm-house-reubro-h1ua.onrender.com/api/v1/users/tours/'+productid
     return this.httpClient.get(baseurl);
   }
   onLogin(data: any) {
